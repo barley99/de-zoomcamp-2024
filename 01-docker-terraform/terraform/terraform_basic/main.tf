@@ -17,8 +17,8 @@ provider "google" {
 
 
 resource "google_storage_bucket" "data-lake-bucket" {
-  name          = "<Your Unique Bucket Name>"
-  location      = "US"
+  name          = "dtc-de-course-376210-my-test-bucket"
+  location      = "EU"
 
   # Optional, but recommended settings:
   storage_class = "STANDARD"
@@ -42,7 +42,7 @@ resource "google_storage_bucket" "data-lake-bucket" {
 
 
 resource "google_bigquery_dataset" "dataset" {
-  dataset_id = "<The Dataset Name You Want to Use>"
-  project    = "<Your Project ID>"
-  location   = "US"
+  dataset_id = "dtc_de_course_376210_my_test_dataset"
+  project    = "dtc-de-course-376210"
+  location   = "EU"
 }

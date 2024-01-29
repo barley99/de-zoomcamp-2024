@@ -14,7 +14,7 @@ provider "google" {
 }
 
 
-resource "google_storage_bucket" "demo-bucket" {
+resource "google_storage_bucket" "dtc-de-course-376210-2-demo-bucket" {
   name          = var.gcs_bucket_name
   location      = var.location
   force_destroy = true
@@ -32,7 +32,7 @@ resource "google_storage_bucket" "demo-bucket" {
 
 
 
-resource "google_bigquery_dataset" "demo_dataset" {
+resource "google_bigquery_dataset" "dtc_de_course_376210_1_demo_dataset" {
   dataset_id = var.bq_dataset_name
   location   = var.location
 }
